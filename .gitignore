@@ -1,11 +1,2 @@
 # .gitignore
 node_modules/
-dist/
-build/
-coverage/
-logs/
-*.log
-Dockerfile
-docker-compose.override.yml
-.idea/
-.vscode/
