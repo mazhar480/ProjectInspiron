@@ -1,0 +1,48 @@
+ProjectInspiron/
+├── backend/
+│   ├── core/                            # Shared utilities, auth, logging, middleware
+│   ├── modules/
+│   │   ├── asset_management/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── services/
+│   │   │   ├── routes/
+│   │   │   └── config/
+│   │   └── inventory_lifecycle/
+│   │       ├── controllers/
+│   │       ├── models/
+│   │       ├── services/
+│   │       ├── routes/
+│   │       └── config/
+│   ├── settings/
+│   │   ├── global_settings/
+│   │   └── module_settings/
+│   │       ├── asset_management_settings.json
+│   │       └── inventory_lifecycle_settings.json
+│   ├── config/                          # Environment, DB, SMTP, etc.
+│   ├── database/                        # Migration & seed scripts
+│   └── server.js                        # Express or Fastify entry point
+
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── modules/
+│   │   │   ├── AssetManagement/
+│   │   │   └── InventoryLifecycle/
+│   │   ├── components/                  # Shared UI components
+│   │   ├── layouts/                     # Layouts for modules
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── store/                       # Global state (e.g., Redux or Context)
+│   │   └── App.tsx
+│   └── index.html
+
+├── scripts/                             # DevOps, init, config scripts
+│   └── initialize-project.ps1
+
+├── docker/                              # Local + Cloud Docker config
+│   ├── docker-compose.yml
+│   └── Dockerfile
+
+├── .env
+└── README.md

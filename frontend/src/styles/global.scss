@@ -1,0 +1,62 @@
+// Variables for colors, fonts, and spacing
+$primary-color: #1D4ED8; // Blue
+$secondary-color: #F59E0B; // Yellow
+$background-color: #F3F4F6; // Light Gray
+
+$font-family: 'Arial', sans-serif;
+$base-spacing: 1rem; // Default spacing
+
+// Body and page layout
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Center content using flexbox
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+// Utility classes for margin and padding
+.m-4 {
+  margin: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+// Card styles for Dashboard and other sections
+.card {
+  background: linear-gradient(135deg, #4F46E5 0%, #9333EA 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+// Responsive grid system
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

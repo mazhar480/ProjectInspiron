@@ -1,0 +1,19 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS InspironA_db;
+
+-- Use the database
+USE InspironA_db;
+
+-- Create the Asset table (matching Sequelize model)
+CREATE TABLE IF NOT EXISTS Assets (
+  AssetID INT AUTO_INCREMENT PRIMARY KEY,
+  AssetType VARCHAR(100),
+  Model VARCHAR(100),
+  Manufacturer VARCHAR(100),
+  SerialNumber VARCHAR(100),
+  Status VARCHAR(50),
+  VenueID INT,
+  ProjectID INT,
+  AssignedUser VARCHAR(100),
+  CreatedAt DATETIME DEFAULT CURRENT_TIMESTAMP
+);
