@@ -1,0 +1,12 @@
+# .gitignore
+node_modules/
+.env
+dist/
+build/
+coverage/
+logs/
+*.log
+Dockerfile
+docker-compose.override.yml
+.idea/
+.vscode/
